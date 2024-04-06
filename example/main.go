@@ -79,5 +79,22 @@ func main() {
 	}
 	fmt.Println("modified = ", err.Error())
 
+	err = errs.GetSecondErrorWithMessage("switch-test")
+	isInvoked := false
+	perr.Switch(err).CaseGroup(perr.ErrorGroup(errs.MyFirstError), func() {
+		panic("unexpected result21")
+	}).Case(errs.MyFirstError, func() {
+		panic("unexpected result22")
+	}).Case(errs.MySecondError, func() {
+		isInvoked = true
+	}).Case(errs.MySecondError, func() {
+		panic("unexpected result23")
+	}).CaseGroup(perr.ErrorGroup(errs.MySecondError), func() {
+		panic("unexpected result24")
+	})
+	if !isInvoked {
+		panic("unexpected result25")
+	}
+
 	fmt.Println("success!")
 }

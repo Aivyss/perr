@@ -1,2 +1,6 @@
 github.com/aivyss/perr v1.0.0 h1:k4P6O3/hJj/QSkzO/4fVLaDV2KHEoKrdq5iASEvW1/U=
 github.com/aivyss/perr v1.0.0/go.mod h1:LHbl7kd/SCZTZFoYecczoEYWDVET7Z7IhOBurB1MZNM=
+github.com/aivyss/perr v1.0.1 h1:h8nVQ+to08Js80zNq/hcZYqcSJVpsAdxsxO8UJpoh1k=
+github.com/aivyss/perr v1.0.1/go.mod h1:LHbl7kd/SCZTZFoYecczoEYWDVET7Z7IhOBurB1MZNM=
+github.com/aivyss/perr v1.0.2 h1:DYsWqb5jVAR9hdP8dsKrKG795JZo5MK0Fe4+dMWz8oQ=
+github.com/aivyss/perr v1.0.2/go.mod h1:LHbl7kd/SCZTZFoYecczoEYWDVET7Z7IhOBurB1MZNM=
